@@ -6,8 +6,8 @@
 	int m1[10][10];
 	int m2[10][10];
 	int mr[10][10];
-	int j; // cont2
-	int i; // contador
+	int j; // columna
+	int i; // Fila
 	int k; // cont3
 
 	for (i=0; i< 10; i++){
@@ -16,12 +16,14 @@
 		m2[i][j]= (rand() % 90) + 10;
 		}
 	}
-	for(i=0; i< 10; j++){
+	printf("There is MATRIX 1: \n");
+	for(i=0; i< 10; i++){
 		for(j = 0; j < 10; j++){
 			printf(" %d ", m1[i][j]);
 		}
 		printf(" \n ");
 	}
+	printf("There is MATRIX 2: \n");
 	for(i=0; i<10; i++){
 		for(j=0; j<10; j++){
 			printf(" %d ", m2[i][j]);
@@ -38,7 +40,7 @@
 			mr[i][j]=value;
 		}
 	}
-	printf(" The result is: ");
+	printf(" The result is:\n ");
 		for(i=0; i<10; i++){
 			for(j = 0; j < 10; j++){
 				printf(" %d ", mr[i][j]);
