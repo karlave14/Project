@@ -2,12 +2,12 @@
 #include<stdio.h>
 #include<time.h>
  int main(){
-	srand(time(NULL));
+	srand(time(NULL)); // use for rand /spend deferent
 	int m1[10][10];
 	int m2[10][10];
 	int mr[10][10];
-	int j; // columna
-	int i; // Fila
+	int j; // columns
+	int i; // rows
 	int k; // cont3
 
 	for (i=0; i< 10; i++){
